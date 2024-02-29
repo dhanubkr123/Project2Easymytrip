@@ -1,0 +1,35 @@
+//Assignmnet no 45-write a program in Array by getting the size of an array using Scanner class?
+package classwork;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class arraysize {
+
+	public static void main(String[] args) {
+
+Scanner sa=new Scanner(System.in);
+
+{
+	System.out.println("Enter the size of Array");
+	int s=sa.nextInt();
+}
+
+	int av[]=new int[4];
+	Scanner s2=new Scanner(System.in);
+	for (int i=0;i<4;i++)
+	{
+		System.out.println("ENter the value of array");
+		av[i]=s2.nextInt();
+	}
+	
+	Arrays.sort(av);
+	System.out.println(Arrays.toString(av));
+	}
+}
+
+	
+	
+	
+
+

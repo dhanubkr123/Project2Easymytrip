@@ -1,0 +1,40 @@
+//Assignmnet 43-Create an array with double and Boolean data types?
+package classwork;
+
+import java.sql.Array;
+import java.util.Arrays;
+
+public class arrayusedatatype {
+
+	public static void main(String[] args) {
+		
+	//boolean and double
+		
+		boolean b[]=new boolean[2];
+		b[0]=true;
+		b[1]=false;
+		System.out.println(Arrays.toString(b));
+		
+		//double
+		double d[]=new double[4];
+		d[0]=37.99;
+		d[1]=87.65;
+		d[2]=98.76;
+		d[3]=76.54;
+        Arrays.sort(d);
+        System.out.println(Arrays.toString(d));
+        
+		/*
+		 * int age[]=new int[3]; age [0]=84; age[1]=38; age [2]=60; //Arrays.sort(age);
+		 * for(int i=0;i<=2;i++) { System.out.println(age[i]); }
+		 * 
+		 * 
+		 * 
+		 * String name[]=new String[5]; name[0]="ram"; name[1]="deepa";
+		 * name[2]="harish"; //Arrays.sort(name);
+		 * System.out.println(Arrays.toString(name));
+		 */
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+//Assignmnet no 13--Write aprogram for AND operator.
+package asssign;
+
+public class assignmnet13 {
+
+	
+	
+	public static void main(String[] args) {
+
+
+		//String dept="IT";
+		int age=40;
+		int salary=8000;
+		if(age>30 && salary > 5000)
+		{
+			System.out.println("This is Admin department");
+		}
+		else
+		{
+			System.out.println("this is not II Deparment");
+		}
+				
+	}
+
+}

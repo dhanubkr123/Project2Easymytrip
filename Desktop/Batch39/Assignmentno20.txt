@@ -1,0 +1,26 @@
+//AssignmentNO -20-Create a two objects for IIb and find out the output
+package asssign;
+
+public class assignmentno20 {
+	
+	
+	
+	/*
+	 * static //SIB { System.out.println("This static method"); }
+	 */
+	
+	//IIB Instance inistalize block
+	{
+		System.out.println("IIB Block");
+	}
+	public static void main(String[] args) {
+		
+		System.out.println("this main method"); //main method
+
+		assignmentno20 blk=new assignmentno20(); //create the object for IIb
+		
+	//	new assignmentno20();
+
+	}
+
+}

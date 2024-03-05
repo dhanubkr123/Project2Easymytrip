@@ -1,0 +1,30 @@
+package asssign;
+
+public class assignmentno11 {
+
+	public static void main(String[] args) 
+	{
+int a=90;
+int b=45;
+int c=89;
+if(c>b)
+{
+	if(b>a)
+	{
+		System.out.println("C and B is greter A");
+	}
+	else
+	{
+		System.out.println("C and B is less than A");
+	}
+}
+	else
+	{
+		System.out.println("A is greter tahn B and C");
+	}
+}
+	
+
+}
+
+

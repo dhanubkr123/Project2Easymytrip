@@ -1,0 +1,18 @@
+//Assignmnet nO 21:Write a program to print 10 to 1 using for loop
+package asssign;
+
+public class Assignmnetno21 {
+
+	public static void main(String[] args) {
+
+
+		for(int i=10;i>0;i--)
+		
+		{
+			System.out.println(i);
+		}
+		
+
+	}
+
+}

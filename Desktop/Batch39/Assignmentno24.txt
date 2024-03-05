@@ -1,0 +1,14 @@
+//Assignmnent no 24:-"Write a program to run a loop that never stops"
+package asssign;
+
+public class Assignmnet24 {
+
+	public static void main(String[] args) {
+
+for(int i=0;i<=1;i--)
+	
+	
+	System.out.println(i);
+	}
+
+}

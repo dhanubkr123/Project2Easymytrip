@@ -1,0 +1,27 @@
+//Assignmetno 23:-"Write a program for Declaration and Intilization for Local andGlobal Variables""
+package asssign;
+
+public class Assignmentno23 {
+	String G="DHanashri"; // Global Variable;declartion and initlization;
+	
+	{
+		System.out.println("G");
+	}
+
+	public static void main(String[] args) 
+	{
+      int a; // Declaration 
+      a=200; // initalziation
+      char d='s'; //declaration and initalization
+      double salary=3000.00;
+      
+      System.out.println(+a);
+      System.out.println(d);
+      System.out.println(+salary);
+      
+      Assignmentno23 as=new Assignmentno23();
+      
+
+	}
+
+}

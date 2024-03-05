@@ -1,0 +1,69 @@
+//Assihmnetno22:-Write a program to find Area of Circle,Triangle,Rectangle,Square,Trapezium
+
+package asssign;
+
+public class assignmnetno22 {
+	
+	void areacircle()
+	{
+		int r=5;
+		double pi=3.14;
+		double area=pi*r*r;
+		{
+		
+		System.out.println("area of a circle:" +area);
+		
+	}
+	}
+	void trianglearea()
+	{
+		
+	
+		int h=10;
+		int w=5;
+		double area=0.5*h*w;
+		{
+			System.out.println("area of triangl:"+area);
+		}
+	}
+	void sqr()
+	{
+		int s=4;
+		int ar=s*s;
+		
+		System.out.println("area of square:" +ar);
+	}
+		
+	void rectangle()
+	{
+		int l=12;
+		int w=14;
+		int ar=l*w;
+
+		System.out.println("area of rectangle:" +ar);
+		
+	
+	}
+	
+	void Trapezium()
+	{
+		int a=12;
+		int b=15;
+		int h=10;
+		double ar=(a+b)/2*h;
+		System.out.println("area of trapezium:"+ar);
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		assignmnetno22 ass=new assignmnetno22();
+		ass.areacircle();
+		ass.trianglearea();
+		ass.Trapezium();
+		ass.sqr();
+		ass.rectangle();
+
+	}
+
+}

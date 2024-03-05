@@ -1,0 +1,60 @@
+//AssignmentNo 18:"Write a program with 4 Static method and 4 Non-Static method make sure all have same name"
+package asssign;
+
+public class assignmentno18 {
+	
+	void add()
+	{
+		int a=10;
+		int b=20;
+		int sum=a+b;
+		System.out.println(+sum);
+	}
+	void add(int a)
+	{
+		int c=10;
+		System.out.println(+c);
+	}
+	void add(float d,int h)
+	{
+	 System.out.println("third non static method");
+	}
+	void add(char c)
+	{
+		System.out.println(" fourth non static method");
+	}
+
+	static void add(boolean t)
+	{
+		System.out.println("first static method");
+	}
+	static void add(String s,int a)
+	{
+		System.out.println("Second static method");
+	}
+	static void add(double k, char o)
+	{
+		System.out.println("third static method");
+		
+	}
+	static void add(int j,float l,double h)
+	{
+		System.out.println("fourth static method");
+		
+	}
+	public static void main(String[] args)
+	{
+		assignmentno18 nt=new assignmentno18();
+		add(true);
+		add("dhanu",67);
+		add(56.9,'u');
+		add(89,5.8f,89.8);
+		nt.add();
+		nt.add(89);
+		nt.add(3.6f,99);
+		nt.add('k');
+		
+		
+	}
+
+}

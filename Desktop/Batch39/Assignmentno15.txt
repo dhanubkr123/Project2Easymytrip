@@ -1,0 +1,26 @@
+//Assignmnet No14:How to call non-static method inside a main method
+package asssign;
+
+public class AssignmnetNo_15 {
+	
+	void add()//non static method
+	{
+		int a=90;
+		int b=120;
+		int sum=a+b;
+		{
+		
+		//System.out.println(a+b);
+			System.out.println(+sum);
+	}
+	}
+
+	public static void main(String[] args) 
+	{
+      
+		AssignmnetNo_15 ad=new AssignmnetNo_15();  //new create object of class
+		ad.add();// callimg the non static method
+
+	}
+
+}

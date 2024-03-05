@@ -1,0 +1,36 @@
+//assignment no 17:Write a program to check if gender equals to male or female.If it is male
+//and check if age is greater than 18 or not.if it is greater than 18 then the person is eligible 
+//to vote otherwise not eligible to vote.If it is female and check if age is greater than 18 or not.
+//If the age is greater than 18 then the person is eligible to vote otherwise not eligible to vote 
+package asssign;
+
+public class assignmentn017 {
+
+	public static void main(String[] args) 
+	
+	{ char gender='F';
+	  char gender1='M';
+	  int age =23; 
+	  
+	  if(age>18 || gender=='F')
+	  {
+		  
+	     if(age>18 && gender1=='M')
+	  {
+		  System.out.println("person is eligible to vote ");
+		  
+	  }
+	     else
+	     {
+	    	 System.out.println("person is not eligible to vote");
+
+	    	 
+	     }
+	  }
+	  else
+	  {
+		  System.out.println("persion is custom");
+	  }
+	}
+}
+

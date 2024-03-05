@@ -1,0 +1,68 @@
+//Assignmen No 16-Write a program with 2 Static method,2 Non-Static method,and one Constructor
+package asssign;
+
+public class assignmentno16 {
+	
+	
+	assignmentno16()
+	{
+		int a=20;
+		int b=80;
+		int m=(b%a);
+		{
+			System.out.println("Moduls of 2no:"+m);
+		}
+	}
+	
+	
+	
+	static void add()
+	{
+		int a=10;
+		float b=1.8f;
+		float sum=a+b;
+		{
+			System.out.println("addition of 2 no:"+sum);
+		}
+	}
+	static void mul()
+	{
+   { int s=45;
+	float y=1.8f;
+	float a=s*y;
+		System.out.println("multiplication of 2 no:"+a);
+	}
+	}
+	
+	void div()
+	{
+		int a=95;
+		int b=15;
+		int d=a/b;
+		{
+			System.out.println("divsion of 2 no:"+d);
+		}
+	}
+	
+	void sub() 
+	{ int a=95;
+	int b=15;
+	int d=a-b;
+	{
+		System.out.println("substraction of 2 no:"+d);
+	}
+		
+	}
+
+	public static void main(String[] args)
+	{
+		add();
+        mul();
+        assignmentno16 as= new assignmentno16();
+        as.div();
+        as.sub();
+        new assignmentno16();
+	}
+	
+
+}

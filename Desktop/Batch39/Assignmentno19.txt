@@ -1,0 +1,67 @@
+//Assignmemt n0-19:write a program for constructor overloading using 10 constructors
+package asssign;
+
+
+
+	public class assignmentNo19 {
+		assignmentNo19()
+		{
+			
+			System.out.println("this first constiuctor");
+		}
+		assignmentNo19(int a)
+		{
+			System.out.println("this  two constroctor");
+			
+		}
+		assignmentNo19(String h)
+		{
+			System.out.println("this 3 constucotor");
+		}
+		assignmentNo19(float t,int u)
+		{
+			System.out.println("this is 4 constcuot");
+		}
+		assignmentNo19(int y,int i,int f)
+		{
+			System.out.println("this is 5");
+			
+		}
+		 
+		assignmentNo19(boolean h)
+		{
+			System.out.println("this 6");
+		}
+		assignmentNo19(char u,String j)
+		{
+			System.out.println("this 7");
+		}
+		
+		assignmentNo19 (double j,float k)
+		{
+			System.out.println("this 8 constructor");
+		}
+		assignmentNo19(double j,double k)
+		{
+			System.out.println("this 9");
+		}
+		assignmentNo19(String k ,String L)
+		{
+			System.out.println("this 10");
+		}
+		
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			new assignmentNo19();
+			new assignmentNo19(10);
+			new assignmentNo19("fghh");
+			new assignmentNo19(9,90);
+			new  assignmentNo19(11,12,14);
+			new assignmentNo19(true);
+			new assignmentNo19('k',"dhanashri");
+			new assignmentNo19(78.09,8.9f);
+			new assignmentNo19(44.2,55.9);
+			new assignmentNo19("automation","Testing");
+			
+	}
+	}

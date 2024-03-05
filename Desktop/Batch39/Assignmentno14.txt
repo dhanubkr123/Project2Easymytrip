@@ -1,0 +1,40 @@
+//assignmnet no 14:Write a program for NOT with AND and NOT with OR operator
+package asssign;
+
+public class assignmnetno14 {
+	
+	public static void main(String[] args)
+	{
+		int age=30;
+		int salary=3000;
+
+		if(!(age>18 || salary>700))
+		{
+			if(!(age>18 && salary>700))
+			{
+				System.out.println("This OR and AND operator");
+			}
+			else
+			{
+				System.out.println("This is not OR and And operator");
+			}
+		}
+		
+			else
+			{
+				System.out.println("Both Not AND oR AND condition are failed");
+			}
+		}
+	
+				
+	  /* {
+			System.out.println("this OR operator");
+		}
+		else
+		{
+			System.out.println("this not OR operator ");
+		}*/
+		
+	}
+
+

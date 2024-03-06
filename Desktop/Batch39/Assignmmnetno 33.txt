@@ -1,0 +1,36 @@
+//Assignmmnetno 33-Write a program for Hierarchical level inheritance with 2
+//child classes by creating different class
+package asssign;
+class newparent
+{
+	void shape()
+	{
+		System.out.println("area of Shape");
+	}
+}
+class newchildone extends newparent
+{
+	void circle()
+	{
+		System.out.println("Display area of circle");
+	}
+}
+class newchildtwo extends newparent
+{
+	void areasquare()
+	{
+		System.out.println("Display area of square");
+	}
+}
+
+public class Assignmneno33 
+	{
+	public static void main(String[] args) {
+		newchildtwo t=new newchildtwo();
+		t.areasquare();
+		t.shape();
+		newchildone on=new newchildone();
+		on.circle();
+	}
+
+}

@@ -1,0 +1,25 @@
+//Assignmnetno9-Write a program to execute if else block
+package automation;
+
+public class assignmnet3 {
+	
+public static void main(String[] args) {
+
+
+
+		int a=23;
+		int b=15;
+		int c=78;
+	
+		if(c>a && c>b)
+		{
+			System.out.println("1");
+		}
+		else
+		{
+			System.out.println("2");
+		}
+		}
+
+
+}

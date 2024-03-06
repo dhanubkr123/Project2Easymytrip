@@ -1,0 +1,38 @@
+//assignmentno 10-Write a programm to execute if else if block
+package automation;
+
+public class assignmetno10 {
+
+	public static void main(String[] args) {
+ char g='m';
+ char g1='f';
+ int age=28;
+ 
+ if(age<18)
+ {
+	 System.out.println("1");
+ }
+ else if(age>=18 && g=='m')
+ {
+	 System.out.println("2");
+ }
+ else if(age>=25 && g1=='f')
+ {
+	 System.out.println(3);
+ }
+ else
+ {
+	 System.out.println(4);
+ }
+	}
+}
+
+
+
+
+	 
+
+
+	
+
+

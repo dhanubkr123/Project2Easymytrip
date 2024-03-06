@@ -1,0 +1,40 @@
+//Assignmentno 26:declare and initialise all type of scanners
+package asssign;
+
+import java.util.Scanner;
+
+public class assignmengno26 {
+
+	public static void main(String[] args) 
+	{
+		Scanner  s1=new Scanner(System.in);
+		int a=s1.nextInt();           //interger value
+
+
+		long l=s1.nextLong();
+		double d=s1.nextDouble();
+		short sh=s1.nextShort();
+		boolean bo=s1.nextBoolean();
+		String k=s1.next();
+		
+		
+		System.out.println("Enter the interger valaue:" +a);
+		//System.out.println("Enter the Character value:" +b);
+	
+		//System.out.println("Enter the String value" +name);
+		System.out.println("Enter the long value:" +l);
+
+		System.out.println("Enter the double value"+d);
+		System.out.println("Enter the short value"+sh);
+		System.out.println("Enter the Boolean value"+bo);
+		System.out.println("Enter the STring "+k);
+
+
+
+
+	   
+
+
+	}
+
+}

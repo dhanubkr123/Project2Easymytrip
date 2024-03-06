@@ -1,0 +1,13 @@
+//assignment 5=Write a program to update a variable's value
+package automation;
+
+public class Assignmnetno2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+      int a=10;
+          a=50;
+      System.out.println(a);
+	}
+
+}

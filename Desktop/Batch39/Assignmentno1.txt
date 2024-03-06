@@ -1,0 +1,13 @@
+//Assignmnetno1-Show a program to print your name
+package automation;
+
+public class Assignmnetno1 {
+
+	public static void main(String[] args) {
+
+     String s="Dhanasshri Chougule";
+     System.out.println(s);
+
+	}
+
+}

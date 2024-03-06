@@ -1,0 +1,27 @@
+//Assignmnetno4-Declare and initialize each datatype
+package automation;
+
+public class Assignmnetno1 {
+
+	public static void main(String[] args) {
+
+
+    int a=45;
+    float f=78.8f;
+    double d=768.908;
+    String s="Dhanashri";
+    char c='d';
+    byte n=6;
+    boolean b=true;
+    short k=8988;
+    System.out.println(a);
+    System.out.println(f);
+    System.out.println(d);
+    System.out.println(c);
+    System.out.println(n);
+    System.out.println(b);
+    System.out.println(k);
+    System.out.println(s);
+   }
+
+}

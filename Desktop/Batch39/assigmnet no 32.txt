@@ -1,0 +1,39 @@
+//assigmnet no 32: Write a program for multi level inheritance by creating different class
+package asssign;                                                
+class parentone
+{ 
+	void add()
+	{
+		System.out.println("this my first parent");
+	}
+}
+class parentwo extends parentone
+{
+	void mul()
+	{
+		System.out.println("this is my second parent");
+	}
+}
+ class parenthree extends parentwo
+ {
+	 
+ 
+	 void div()
+	 {
+		 System.out.println("this is my three parent");
+	 }
+ }
+
+public class Assignmnetno32 
+{
+public static void main(String[] args) {
+	
+	parenthree as=new parenthree();
+	as.add();
+	as.div();
+	as.mul();
+	
+}
+
+}
+

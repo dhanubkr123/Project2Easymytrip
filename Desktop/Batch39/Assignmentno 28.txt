@@ -1,0 +1,28 @@
+
+//Assignment no 28-Write a program using for loop that starts from 1 to 10 and find out its average?
+
+package asssign;
+
+public class Assignmengno28 {
+
+	public static void main(String[] args) {
+int num=0;
+int avg=0;
+for(int i=1;i<=20;i++)
+{
+num=num+i;
+
+}
+
+System.out.println("Addition of 10 numbers:"+num);
+avg=num/20;
+
+System.out.println("Avreage of 10 numbers" +avg);
+
+
+	
+}
+
+	}
+
+

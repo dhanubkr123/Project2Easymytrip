@@ -1,0 +1,48 @@
+//assignment 7=Create a class and write 5 static methods each for addition, subtration, multiplication,
+//devision and modules, call it in the main method
+package automation;
+
+public class Assignmnetno2 {
+      
+	static void add()
+	{ 
+		int a=13;
+        int b=76;
+		System.out.println(a+b);
+	}
+	static void sub()
+	{
+		int a=90;
+		int b=34;
+		System.out.println(a-b);
+	}
+	static void mul()
+	{
+		int a=98;
+		int c=87;
+		System.out.println(a*c);
+	}
+	static void div()
+	{
+		int a=75;
+		int b=15;
+		System.out.println(a/b);
+	}
+	static void mod()
+	{
+		int s=89;
+		int y=12;
+		float c=s/y;
+		System.out.println(c);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+        add();
+        sub();
+        mul();
+        div();
+        mod();
+	}
+
+}

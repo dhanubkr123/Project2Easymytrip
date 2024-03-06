@@ -1,0 +1,27 @@
+//Assignment No35:Write a program for method overriding 
+package asssign;
+
+class testing
+{
+	void automation(int a)
+	{
+		System.out.println("This is Automation batch");
+	}
+	
+}
+public class Assignmnetno35  extends testing
+{
+	
+	void automation(int a)
+	{
+		System.out.println("This is manual batch");
+		super.automation(a);
+	}
+
+	public static void main(String[] args) 
+	{
+		Assignmnetno35 no=new Assignmnetno35();
+		no.automation(25);
+	
+	}
+}

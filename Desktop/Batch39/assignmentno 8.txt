@@ -1,0 +1,23 @@
+//assignmentno 8-Write a program to execute if block
+
+package automation;
+
+public class assignmnet8 {
+
+	public static void main(String[] args) {
+
+      int a=18;
+      int b=98;
+      
+      if(b>a)
+      {
+    	  System.out.println("B Is Greater than A");
+      }
+      else
+      {
+    	  System.out.println("B is smaller than A");
+      }
+
+	}
+
+}

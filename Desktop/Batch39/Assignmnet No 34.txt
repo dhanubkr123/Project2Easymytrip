@@ -1,0 +1,28 @@
+//Assignmnet No 34: //Write a program to call the parent class constructor using super calling statement
+package asssign;
+
+class parent
+{
+	parent()
+	
+	{
+		System.out.println("This parnet Constucter");
+	}
+}
+
+public class assignmnetno34 extends parent
+{   
+	assignmnetno34()
+	{
+		super();
+		System.out.println("This is child constuctor");
+	}
+
+	public static void main(String[] args) {
+
+		//parent ne=new parent();
+		assignmnetno34 h=new 	assignmnetno34();
+		
+	}
+
+}

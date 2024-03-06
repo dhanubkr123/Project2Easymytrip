@@ -1,0 +1,35 @@
+//Assignmeet no=31 //interitance with statics method single level inheritance
+
+package intertance;
+
+
+class parent_class
+{
+	static void add(int a,int b)
+	{
+		System.out.println(a+b);
+	}
+}
+
+
+public class singleinheritance  extends parent_class
+{
+	static void mul(int a, int b)
+	{
+		System.out.println(a*b);
+		
+	}
+	static void sub(int a,int b)
+	{
+	 System.out.println(a-b);
+	}
+
+	public static void main(String[] args) {
+ mul(-5,10);
+ sub(-25,14);
+ add(33,99);
+ 
+
+	}
+
+}

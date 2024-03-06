@@ -1,0 +1,16 @@
+//Assignmnt NO 38:Write a program to replace surname to some other name using String functions.
+package stringpratices;
+
+public class Assignmnet38 {
+
+	public static void main(String[] args) {
+
+    String a="Dhanashri Chougule";
+    
+    String c=a.replace("Chougule","Baikar");
+    System.out.println(c);
+    
+    
+   }
+
+}

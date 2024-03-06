@@ -1,0 +1,61 @@
+//assignment no 30:Find the area and circumference of the circle,triangle,square,rectangle & trapezium using scanner class
+
+package pratices;
+
+import java.util.Scanner;
+
+public class scannerclass {
+
+	public static void main(String[] args) {
+		// circle
+		Scanner sa = new Scanner(System.in);
+		double pi = sa.nextDouble();
+		int r = sa.nextInt();
+		double area = pi * r * r;
+		double circum = 2 * pi * r;
+
+		// square
+		int suq = sa.nextInt();
+		int squarea = suq * 2;
+		int pre = suq * 4;
+		// rectangle
+		int rectanglel = sa.nextInt();
+		int recwidth = sa.nextInt();
+		int prerec = 2 * rectanglel * 2 * recwidth;
+		int recarea = rectanglel * rectanglel;
+
+		// tringle
+		int heigt = sa.nextInt();
+		int b = sa.nextInt();
+		float f = sa.nextFloat();
+		float are = f * b * heigt;
+		int triper = 3 * b;
+
+		// trapezium
+		int a = sa.nextInt();
+		int ba = sa.nextInt();
+		int he = sa.nextInt();
+		int c = sa.nextInt();
+		int d = sa.nextInt();
+		float areat = a * ba / 2 * he;
+		int tripper = a + ba + c + d;
+
+		// String ba=sa.nextString();
+		
+		  System.out.println("area of a circel:" + area);
+		  System.out.println("area of a ciscumfrenc:" + circum);
+		  
+		  System.out.println("area of square:" + suq);
+		  System.out.println("perimter of squre:" + pre);
+		  System.out.println("Area of rectangle:" + recarea);
+		  System.out.println("Permeter of reacngle:" + prerec);
+		  System.out.println("Area of triangle:" + are);
+		  
+		  
+		  System.out.println("area of trapezium:" +areat);
+		  System.out.println("Permeter of trapezium:" +tripper);
+		 
+		 
+	}
+
+}

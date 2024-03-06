@@ -1,0 +1,35 @@
+//AssignmnetNo 37:write a program using abstract class,abstract method ,concrete class and concrete method?
+
+package asssign;
+
+abstract class one
+{
+	abstract void add();
+}
+
+public class Assignmnetno37 extends one {
+	
+	void sub()
+	{
+		System.out.println("this concreat class and method");
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Assignmnetno37 a=new Assignmnetno37();
+		a.sub();
+		a.add();
+		
+	}
+
+    void add() {
+    	System.out.println("Internal logic of one that method");
+    	
+
+
+		
+	}
+
+}

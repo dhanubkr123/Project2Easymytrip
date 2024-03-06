@@ -1,0 +1,30 @@
+//Assignmnet no29=create 5 methods for addition , subtraction , multiplication ,divison ,
+//modulus using 5 scanner class with local  variables
+package asssign;
+
+import java.util.Scanner;
+
+
+public class Assignmentno29 {
+
+	
+	public static void main(String[] args) {
+Scanner sw=new Scanner(System.in);
+int a=sw.nextInt();
+int b=sw.nextInt();
+
+int add=a+b;
+int sub=a-b;
+int mul=a*b;
+int div=a/b;
+int mod=a%b;
+
+System.out.println("Addiion:" +add);
+System.out.println("substraction:"+ sub);
+System.out.println("multiplictaion:"+mul);
+System.out.println("Divsion:"+div);
+System.out.println("Moduls:"+mod);
+
+	}
+
+}

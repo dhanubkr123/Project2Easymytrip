@@ -1,0 +1,31 @@
+//Assignmnetno 36-write a program using this keyword to 
+//assign the value of a LV(local variable) to GV(global variable)
+package asssign;
+
+public class Assignmentno36 
+{
+	int age=45;
+	String d="Dhanashro";
+	double sal=3360;
+	void add(int age,String d,double sal)
+	{
+	 this.age=age;
+	 this.d=d;
+	 this.sal=sal;
+	 
+	}
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Assignmentno36 a1=new Assignmentno36();
+		a1.add(23, "Automation tetsing",8908 );
+		System.out.println(a1.age);
+		System.out.println(a1.d);
+		System.out.println(a1.sal);
+	}
+
+}

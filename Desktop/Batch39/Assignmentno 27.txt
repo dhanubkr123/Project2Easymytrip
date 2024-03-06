@@ -1,0 +1,58 @@
+//Assignmentno 27:create 5 methods for addition , subtraction , multiplication ,divison , 
+//modulus using scanner class with global variable
+package asssign;
+
+import java.util.Scanner;
+
+public class AssignmentNo_27 {
+	Scanner s=new Scanner(System.in);
+	int a=s.nextInt();
+	int b=s.nextInt();
+	int add=a+b;
+	int sub=a-b;
+	int mul=a*b;
+	float div=a/b;
+	float mod=a%b;
+	
+	void add()
+	{
+		System.out.println("Addition of 2 No:" +add );
+	}
+	
+	void sub()
+	{
+		System.out.println("Subtraction:"+sub);
+		
+	}
+	
+	void multi()
+	{
+		System.out.println("Multiplication of 2 numbers:" +mul);
+	}
+	
+	void div()
+	{
+		System.out.println("Divison of 2 numbers:"+div);
+	}
+	void modone()
+	{
+		System.out.println("mod of 2 numbers"+mod);
+	}
+	
+public static void main(String[] args) 
+{
+	AssignmentNo_27 no=new AssignmentNo_27();
+	no.add();
+	no.sub();
+	no.multi();
+	no.div();
+	no.modone();
+	
+		
+		
+
+
+
+	}
+
+}

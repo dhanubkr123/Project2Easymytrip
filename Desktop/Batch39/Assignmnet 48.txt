@@ -1,0 +1,37 @@
+//Assignmnet 48-In a string "mango" calculate how many are alpha and how many are numeric
+package stringpratices;
+
+public class stringnumalpa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String m="mango";
+		char s[]=m.toCharArray();
+		int alpha=0;
+		int num=0;
+		
+		
+		for(int i=0;i<m.length();i++)
+		{ 
+			boolean ans=Character.isAlphabetic(s[i]);
+			boolean sd=Character.isDigit(s[i]);
+		
+			
+			if(ans==true)
+			{
+
+             alpha++;
+			}
+			if(sd==true)
+			{
+
+              num++;
+			}
+			System.out.println("character is aplha:  "+alpha);
+			System.out.println("character isnumric: "+num);
+		}
+			
+	}
+
+}
+

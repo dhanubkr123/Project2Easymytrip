@@ -1,0 +1,23 @@
+//assignmmetno54:Swap the 2 numbers without extra variable 
+
+package accessspecifier;
+
+public class swapwithoutv {
+
+	public static void main(String[] args) {
+
+      int a=50;
+      int b=90;
+      
+      a=a+b;
+      b=a-b;
+      a=a-b;
+      
+     
+      System.out.println("display value of variable a:" +a);
+      System.out.println("display value of variable a:" +b);
+
+      
+	}
+
+}

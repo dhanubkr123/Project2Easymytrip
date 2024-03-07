@@ -1,0 +1,26 @@
+//Assisgnment No 52:Find the factorial of numbers
+package accessspecifier;
+
+import java.util.Scanner;
+
+public class factorialno {
+
+	public static void main(String[] args) {
+
+int fact=1;
+Scanner s1=new Scanner(System.in);
+System.out.println("Enter the Number:");
+int f=s1.nextInt();
+
+for(int i=f;i>=1;i--)
+{
+	fact=fact*i;
+}
+	
+	System.out.println("Factorail is:" +fact);
+	
+
+		   }
+		}
+
+

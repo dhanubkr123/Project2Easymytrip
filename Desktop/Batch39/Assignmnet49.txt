@@ -1,0 +1,46 @@
+//Assignmnet49-In a string "sky is 441 !@#" find out the number of special character,alphabet,numeric,spaces we have
+package classwork;
+
+public class alphanumspecial {
+
+	public static void main(String[] args) {
+		String s="sky is 421 @%##";
+		char sa[]=s.toCharArray();
+		int alphacount=0;
+		int digitcount=0;
+		int spacecount=0;
+		int specialcount=0;
+		
+		
+		for(int i=0;i<s.length();i++)
+		{
+			boolean ans=Character.isAlphabetic(sa[i]);
+			boolean ans1=Character.isDigit(sa[i]);
+			boolean ans2=Character.isSpaceChar(sa[i]);
+		if(ans==true)
+		{
+			alphacount++;
+		}
+		if(ans1==true)
+		{
+			digitcount++;
+		}
+		if(ans2==true)
+		{
+			spacecount++;
+		}
+		
+		System.out.println("aplha:  "+alphacount);
+		System.out.println("numric: "+digitcount);
+		System.out.println("spacecount: "+spacecount);
+		
+		specialcount=s.length()-(alphacount+digitcount+spacecount);
+		System.out.println("speicalcharcount: "+specialcount);
+		}
+		
+
+	}
+
+}
+
+

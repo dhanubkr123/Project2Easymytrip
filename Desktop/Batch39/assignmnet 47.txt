@@ -1,0 +1,32 @@
+//assignmnet 47-In  a string "mango123" check which character is numeric and which is alpha
+//how many aplhabet and numeric
+package classwork;
+
+public class stringandnumric {
+
+	public static void main(String[] args) {
+
+String m="mango123";
+  char c[]=     m.toCharArray();
+  int aplhacount=0;
+  int numcount=0;
+  
+  for(int i=0;i<m.length();i++)
+  {
+    boolean ans=Character.isAlphabetic(c[i]);
+    boolean a=Character.isDigit(c[i]);
+  
+if(ans==true)
+{
+	aplhacount++;
+}
+if(a==true)
+{
+	numcount++;	
+}
+System.out.println("Alpahbect count:"+aplhacount);
+System.out.println("numric count:" +numcount);
+	}
+
+}
+}

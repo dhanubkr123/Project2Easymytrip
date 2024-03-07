@@ -1,0 +1,28 @@
+//Assignmnt50-Copy the value of 1 array into another array using iteration
+package classwork;
+
+import java.util.Arrays;
+
+public class copyarray {
+
+	public static void main(String[] args) {
+		int ar[]=new int[4];
+		ar[0]=23;
+		ar[1]=34;
+		ar[2]=87;
+		ar[3]=23;
+		
+		int ar1[]=new int[ar.length];
+		
+		for(int i=0;i<4;i++)
+		{
+			ar1[i]=ar[i];
+		}
+		
+		System.out.println(Arrays.toString(ar1));
+		System.out.println(Arrays.toString(ar));
+
+	}
+
+}
+

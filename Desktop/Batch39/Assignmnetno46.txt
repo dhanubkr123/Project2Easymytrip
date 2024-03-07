@@ -1,0 +1,72 @@
+//Assignmnetno 36-write a program using this keyword to 
+//assign the value of a LV(local variable) to GV(global variable)
+package asssign;
+
+public class Assignmentno36 
+{
+	int age=45;
+	String d="Dhanashro";
+	double sal=3360;
+	void add(int age,String d,double sal)
+	{
+	 this.age=age;
+	 this.d=d;
+	 this.sal=sal;
+	 
+	}
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Assignmentno36 a1=new Assignmentno36();
+		a1.add(23, "Automation tetsing",8908 );
+		System.out.println(a1.age);
+		System.out.println(a1.d);
+		System.out.println(a1.sal);
+	}
+
+}
+//assignmnt no46=Check any 2 strings are anagram or not
+
+package classwork;
+
+import java.util.Arrays;
+
+public class angaram {
+
+	public static void main(String[] args) {
+
+String s1="thing";
+String s2="night";
+if(s1.length()!=s2.length())
+{
+	System.out.println("this string not anagram string");
+}
+else
+{
+	char n1[]=s1.toCharArray();
+	char n2[]=s2.toCharArray();
+	
+	Arrays.sort(n1);
+	Arrays.sort(n2);
+	System.out.println(Arrays.toString(n1));
+	System.out.println(Arrays.toString(n2));
+	boolean ans=Arrays.equals(n1, n2);
+	System.out.println(ans);
+	if(ans==true)
+	{
+		System.out.println("both string is anagram");
+	}
+	else
+	{
+		System.out.println("both string is not anagram");
+
+	}
+}
+
+	}
+
+}

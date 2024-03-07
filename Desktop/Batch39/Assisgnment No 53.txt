@@ -1,0 +1,32 @@
+//Assignmmetno 53=Swap the 2 number using third variable 
+package accessspecifier;
+
+import java.util.Scanner;
+
+public class swapno {
+
+	public static void main(String[] args) {
+		
+		Scanner s1=new Scanner(System.in);
+		
+		System.out.println("enter first no:");
+		int d=s1.nextInt();
+		Scanner s2=new Scanner(System.in);
+		
+		System.out.println("enter second no:");
+		int d1=s2.nextInt();
+		
+		//int a=10;
+		//int b=20;
+		int c=0;
+		
+	
+		c=d;
+		d=d1;
+		d1=c;
+		
+		System.out.println("Display value of a variable:"+d);
+		System.out.println("Display value of b varibale:"+d1);
+	}
+
+}

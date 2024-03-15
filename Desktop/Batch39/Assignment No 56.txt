@@ -1,0 +1,17 @@
+//Assignment No 56-write a program to convert weight which is int into double?
+
+package asssign;
+
+public class Assignmnet56 {
+
+	public static void main(String[] args) {
+
+        double weight=(double)56;
+        System.out.println(weight);
+        
+        
+        
+
+	}
+
+}

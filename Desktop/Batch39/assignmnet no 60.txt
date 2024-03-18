@@ -1,0 +1,14 @@
+//assignmnet no 60-WAP for throw keyword
+package asssign;
+
+public class assignmnetno60 {
+
+	public static void main(String[] args)
+  {
+
+  throw new NullPointerException("NUll value getting");
+
+ // throw new ArithmeticException("Arimatica error");
+	}
+
+}

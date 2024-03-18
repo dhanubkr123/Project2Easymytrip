@@ -1,0 +1,26 @@
+//Asasignmnetno 58-create a class with ur name and upcast to object class
+class objectclass
+{
+	void add()
+	{
+		System.out.println("this is objectclass");
+	}
+}
+public class Dhanashri extends objectclass
+{
+
+	
+	void sub()
+	{
+		System.out.println("this is my class");
+	}
+	public static void main(String[] args) {
+
+      objectclass o=new objectclass();
+      o.add();
+     
+      
+
+	}
+
+}

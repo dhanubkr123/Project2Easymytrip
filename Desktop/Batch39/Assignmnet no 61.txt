@@ -1,0 +1,60 @@
+//Assignmnet no 61=WAP by upcasting from Experience Student class to Mentor Class and 
+//downcasting from Experience Student Class to Student Class with four classes of Student, 
+//Experience Student,Mentor and Teacher
+
+class teacherone
+{
+	void add1()
+	{
+		System.out.println("add");
+	}
+	
+}
+class mentorone extends teacherone
+{
+	void  sub1()
+	{
+		System.out.println("sub");
+
+	}
+}
+class ex_studnet extends mentorone
+{
+	void div()
+	{
+		System.out.println("div");
+	}
+}
+public class student extends ex_studnet {
+	void mod()
+	{
+		System.out.println("mod");
+	}
+
+	public static void main(String[] args) {
+
+   
+       mentorone m=new ex_studnet();
+       m.sub1(); 
+       m.add1();
+       
+       
+      ex_studnet e =(ex_studnet)m;
+      e.div();
+     
+  
+
+      
+		/*
+		 * //student s1=new ex_studnet(); student s1=(student)e; s1.div();//ex student
+		 * s1.sub1();//mentor s1.add1();//teacher
+		 * 
+		 */
+      
+
+
+      
+       
+	}
+
+}

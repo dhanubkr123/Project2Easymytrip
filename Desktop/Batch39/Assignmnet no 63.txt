@@ -1,0 +1,18 @@
+//Assignmnet no 63-WAP for Assert key word
+import java.util.jar.Attributes.Name;
+
+public class assertprogram {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		  String d="dhanu chougule";
+		  assert d.length()>120; 
+		  for(int i=1;i<d.length();i++)
+		  { System.out.println(d.concat("baikar")); }
+		 
+
+
+	}
+
+}

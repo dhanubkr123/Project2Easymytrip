@@ -1,0 +1,38 @@
+//Assignmnet 65-Write a program to demonstrate this calling statement
+
+package classwork;
+
+public class thiscalling
+{
+	thiscalling()
+	{
+		this(12);
+		System.out.println("construto1");
+	}
+
+	thiscalling(int k)
+   {
+	   this("dhanu");
+	   
+	   
+	   System.out.println("construto2");
+   }
+	thiscalling(String ka)
+   {   this(23.98);
+	   System.out.println("construto3");
+   }
+	thiscalling(double d)
+   {
+	   System.out.println("constuctor4");
+   }
+
+ 
+	
+
+	public static void main(String[] args) 
+	{
+
+		thiscalling t=new thiscalling();
+	}
+
+}

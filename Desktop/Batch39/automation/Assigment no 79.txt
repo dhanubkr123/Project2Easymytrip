@@ -1,0 +1,28 @@
+//Assigment no 79:-Launch an empty browser, Navigate to “amazon.in” login page,
+//
+//Enter user name > click on continue, Enter password > click on continue, 
+//Click on Login button
+package launch;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class amezone {
+
+	public static void main(String[] args) throws InterruptedException {
+		ChromeDriver driver = new ChromeDriver();
+		// driver.manage().window().maximize();
+		driver.manage().window().minimize();
+		driver.get("https://www.amazon.in/ap/signin");
+		String t1 = driver.getTitle();
+		System.out.println(t1);
+		Thread.sleep(10000);
+		driver.findElement(By.id("ap_email")).sendKeys("stbymkt@gmail.com");
+		driver.findElement(By.id("continue")).click();
+		 driver.findElement(By.id("ap_password")).sendKeys("123456");
+		 driver.findElement(By.id("signInSubmit")).click();                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+		 
+
+	}
+
+}

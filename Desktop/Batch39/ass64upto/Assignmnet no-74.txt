@@ -1,0 +1,25 @@
+//Assignmnet no 74=WAP to overload main method
+public class mainoverload {
+
+	public static void main(String[] args) {
+
+main();
+main(6);
+main("main method");
+
+	}
+	public static void main()
+	{
+		System.out.println("main method overload 1");
+	}
+	
+	public static void main(int a)
+	{
+		System.out.println("main method 2");
+	}
+	public static void main(String k)
+	{
+		System.out.println("main method 3");
+	}
+
+}

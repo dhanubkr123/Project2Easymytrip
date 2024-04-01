@@ -1,0 +1,20 @@
+//Assignmnrt no66-Write a program to demonstrate while loop
+package accessspecifier;
+
+import java.util.Scanner;
+
+public class whileloop {
+
+	public static void main(String[] args) {
+
+      int num=81;
+
+      while(num%9==0)
+      {
+    	  System.out.println("num is divdisible by 9");
+    	  num++;
+      }
+
+	}
+
+}

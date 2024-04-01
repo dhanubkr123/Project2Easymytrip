@@ -1,0 +1,110 @@
+Assignmnet no-67 t073--//Assignment no-67-73  WAP to demonstrate ArrayList,Vector,linklist,priorty set,treeset,hastset
+//for its parameters like index, dynamic, null, heterogeneous, duplicate and sort
+package classwork;
+
+import java.util.*;
+
+public class collectionprogram {
+
+	public static void main(String[] args) {
+
+    ArrayList s1=new ArrayList();
+    s1.add(89);
+    s1.add(12);
+    s1.add(13);
+    s1.add(13);
+    s1.add("Dhanashri");
+    s1.add('J');
+    s1.add(null);
+    s1.add(null);
+    s1.add(66.78);
+    s1.add(true);
+   
+    
+    System.out.println(s1);
+	
+	
+	ArrayList s2=new ArrayList();
+	s2.add(89);
+	s2.add(66);
+	s2.add(33);
+	s2.add(false);
+	s2.add("Arraylistsecond");
+//Collections.sort(s2);
+ System.out.println(s2);
+ 
+ 
+ Vector v1=new Vector();
+  v1.add(67);
+  v1.add(11);
+  v1.add(14);
+  v1.add(90);
+  v1.add(90);
+ v1.add("Vector string");
+ v1.add(false);
+ v1.add(null);
+//Collections.sort(v1);
+  System.out.println(v1);
+  
+  
+  LinkedList l1=new LinkedList();
+  l1.add(99);
+  l1.add(23);
+  l1.add(78);
+  l1.add(78);
+  l1.add(null);
+
+  l1.add("Linkelist");
+  l1.add(true);
+  //Collections.sort(l1);
+  System.out.println(l1);
+  
+  
+  PriorityQueue q1=new PriorityQueue();
+  q1.add(87);
+  q1.add(45);
+  q1.add(66);
+  q1.add(66);
+ // q1.add(null);
+
+ // q1.add("queue");
+  System.out.println(q1);
+  
+  TreeSet s4=new TreeSet();
+ // s4.add("dhanshri");
+  s4.add(78);
+  s4.add(80);
+  s4.add(32);
+  s4.add(80);
+ // s4.add(null);
+ // s4.add(true);
+  System.out.println(s4);
+  
+  HashSet h1=new HashSet();
+  h1.add("DHanasjri");
+  h1.add("Chougule");
+  h1.add(876);
+  h1.add(true);
+  h1.add('o');
+  System.out.println(h1);
+  
+  LinkedHashSet h3=new LinkedHashSet();
+  h3.add("Linkedhasstring");
+  h3.add(78);
+  h3.add(45);
+  h3.add(90);
+  h3.add(45);
+  h3.add(null);
+  h3.add(null);
+  System.out.println(h3);
+  
+  
+  
+  
+
+
+	
+	
+	}
+
+}

@@ -1,0 +1,17 @@
+//Assignmnet no 75="Launch a chrome browser and open google page"
+
+package seleniump;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class googlelunch {
+
+	public static void main(String[] args) {
+
+   ChromeDriver driver=new ChromeDriver();
+   driver.get("https://www.google.com/");
+   driver.close();
+
+	}
+
+}

@@ -1,0 +1,21 @@
+//Assignment no 80=Launch an empty browser, Navigate to “facebook.com”,
+//Enter user name, Enter password, Click on Login button
+package launch;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class facebbok {
+
+	public static void main(String[] args) throws InterruptedException {
+
+ChromeDriver driver=new ChromeDriver();
+driver.get("https://www.facebook.com/");
+driver.findElement(By.name("email")).sendKeys("baikardhanshri@gmail.com");
+driver.findElement(By.name("pass")).sendKeys("uyudsuhbkr@93");
+Thread.sleep(1000);
+driver.findElement(By.name("login")).click();
+
+	}
+
+}

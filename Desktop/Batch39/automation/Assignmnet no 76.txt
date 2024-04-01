@@ -1,0 +1,32 @@
+//Assignmnet no 76-Launch a chrome browser and get the title of the Flip kart page
+package launch;
+
+import java.util.Arrays;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class filpkart {
+
+	public static void main(String[] args) {
+
+      ChromeDriver driver=new ChromeDriver();
+      driver.get("https://www.flipkart.com/");
+      
+      String b=driver.getTitle();
+  
+      int count=b.length();
+		/*
+		 * String f[]=new String [150];
+		 * 
+		 * { // int f[i]; //String f[]=b.toCharArray(b);
+		 * System.out.println(Arrays.toString(f)); }
+		 */
+
+
+      System.out.println(b);
+      System.out.println(count);
+     // driver.close();
+     // driver.quit();
+      
+	}
+}

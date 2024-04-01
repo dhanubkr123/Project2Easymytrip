@@ -1,0 +1,32 @@
+//Assignmnet no 78="Launch an empty browser, Navigate to “google.com”, 
+//Type India in search text field, Click on search button"
+
+package seleniump;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class googlelunch {
+
+	public static void main(String[] args) throws InterruptedException {
+
+   ChromeDriver driver=new ChromeDriver();
+   driver.get("https://www.google.com/");
+   driver.manage().window().maximize();
+   WebElement search=driver.findElement(By.xpath("(//textarea)[1]"));
+	search.sendKeys("india");
+	search.sendKeys(Keys.ENTER);
+	search.click();
+
+
+
+
+   
+   
+   //driver.close();
+
+	}
+
+}

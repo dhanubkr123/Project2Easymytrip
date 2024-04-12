@@ -1,0 +1,31 @@
+//Assignment no 90-1.Launch amazon.in
+//2.Type shoes on text area, click on  search button
+//3. Select first shoe from the list using relative xpath using class name locator
+
+package seleniump;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class amezonexpath {
+
+	public static void main(String[] args) {
+
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://www.amazon.in/");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
+		// WebElement dr=driver.findElement(By.cssSelector("#dhanshri"));
+		WebElement dr = driver.findElement(By.cssSelector("#twotabsearchtextbox"));
+		dr.sendKeys("shoes");
+		WebElement firstop = driver.findElement(By.xpath("//span[@class='s-heavy']"));
+		firstop.click();
+
+	}
+
+}

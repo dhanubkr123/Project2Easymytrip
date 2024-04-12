@@ -1,0 +1,25 @@
+//Assignmnet no 100:Launch google.com using navigate method and 
+//use methods forward, back and refresh
+
+package seleniump;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class windowacitivity {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		ChromeDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.google.com/");
+		driver.navigate().to("https://grotechminds.com/registration/");
+		driver.navigate().back();
+		driver.navigate().forward();
+		driver.navigate().refresh();
+		driver.navigate().to("https://www.flipkart.com/");
+		
+
+	}
+
+}

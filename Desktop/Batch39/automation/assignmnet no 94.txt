@@ -1,0 +1,64 @@
+
+//assignmnet no-94--Launch GroTechMinds.com > register page > enter present address > then control+a > then control+c > then go to permanent address > do control+v. 
+//Your present address should be copied to your permanent address.
+
+package launch;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class growthtechACV {
+
+	public static void main(String[] args) throws InterruptedException {
+
+   ChromeDriver driver=new ChromeDriver();
+   driver.get("https://grotechminds.com/registration/");
+   driver.findElement(By.name("email")).sendKeys("baikardhanashri@gmail.com");
+   WebElement g=driver.findElement(By.name("email"));
+		   g.sendKeys(Keys.CONTROL+"A");
+		   g.sendKeys(Keys.CONTROL+"C");
+		  // driver.findElement(By.id("password")).sendKeys("baikardhanashri@gmail.com");
+		   WebElement h=driver.findElement(By.id("password"));
+		   h.sendKeys(Keys.CONTROL+"V");
+
+
+		   driver.findElement(By.id("Female")).click();
+			
+			/*
+			 * WebElement
+			 * ss=driver.findElement(By.xpath("//select[@class='Skills ss form-control']"));
+			 * ss.click(); Select s=new Select(ss); s.selectByIndex(1);
+			 * 
+			 * 
+			 * WebElement
+			 * cou=driver.findElement(By.xpath("//select[@class='Country ss form-control']")
+			 * ); cou.click(); Select q=new Select(cou); q.selectByIndex(8);
+			 * 
+			 * WebElement
+			 * re=driver.findElement(By.xpath("//select[@class='Relegion ss form-control']")
+			 * ); re.click(); Select k=new Select(re); k.selectByIndex(1)
+			 */;
+
+		 WebElement y= driver.findElement(By.name("Present-Address"));
+		 y.sendKeys("Mumbai Borivali");
+		 y.sendKeys(Keys.CONTROL+"A");
+		   y.sendKeys(Keys.CONTROL+"C");
+		  WebElement p=driver.findElement(By.id("Permanent-Address"));
+		  p.sendKeys(Keys.CONTROL+"V");
+		  driver.findElement(By.id("Pincode")).sendKeys("400093");
+		  driver.findElement(By.name("relocate")).click();
+		 WebElement upload= driver.findElement(By.id("file"));
+		 upload.sendKeys("C:\\Users\\HP\\Desktop\\Batch39\\Assignmeet no31.txt");
+		 driver.findElement(By.xpath("//button[@class='btn btn-primary']")).click();
+
+			}
+
+		   
+   
+   
+	}
+
+

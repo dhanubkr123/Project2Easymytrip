@@ -1,0 +1,39 @@
+//Assignment No 97=Launch google.com >
+//type India by making sure that the component is displaying and enabled.
+
+
+package launch;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class googlebroswer {
+
+	public static void main(String[] args) {
+		ChromeDriver driver=new ChromeDriver();
+		  driver.manage().window().maximize();
+		  driver.navigate().to("https://www.google.com/");
+		  driver.getTitle();
+			
+			
+			
+			
+			  WebElement search=driver.findElement(By.xpath("(//textarea)[1]"));
+			  
+			  if(search.isDisplayed()==true && search.isEnabled()==true) {
+			  
+			  search.sendKeys("india"); search.sendKeys(Keys.ENTER); search.click(); }
+			 
+		  
+			
+			
+		
+		   
+
+
+
+	}
+
+}

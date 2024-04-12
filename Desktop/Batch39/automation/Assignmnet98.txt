@@ -1,0 +1,29 @@
+//Assignment no 98-Launch https://grotechminds.com/is-selected/> 
+//check whether make sure that checkbox1 is Selected or Not
+package launch;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class growthcheckbox {
+
+	public static void main(String[] args) {
+
+     ChromeDriver driver=new ChromeDriver();
+     driver.get("https://grotechminds.com/is-selected/");
+     driver.manage().window().maximize();
+     WebElement checkb=driver.findElement(By.xpath("//input[@type='checkbox']"));
+     
+     boolean ans=checkb.isSelected();
+     System.out.println(ans);
+		
+		  if(ans==false)
+		  { 
+			  checkb.click(); 
+			  }
+
+
+	}
+
+}

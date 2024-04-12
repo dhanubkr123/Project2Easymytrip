@@ -1,0 +1,38 @@
+//Assignment No 93=Launch google.com > type India in search >
+//press arrow down button 4 times and click on enter.
+
+
+
+package launch;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class googlebroswer {
+
+	public static void main(String[] args) {
+		ChromeDriver driver=new ChromeDriver();
+		  driver.manage().window().maximize();
+		  driver.navigate().to("https://www.google.com/");
+		  driver.getTitle();
+			
+			
+			
+						
+			
+			  WebElement search=driver.findElement(By.xpath("(//textarea)[1]"));
+			  search.sendKeys("india"); 
+			  search.sendKeys(Keys.ARROW_DOWN);
+			  
+			  search.sendKeys(Keys.ARROW_DOWN);
+			  
+			  search.sendKeys(Keys.ARROW_DOWN); 
+			  search.sendKeys(Keys.ARROW_DOWN);
+			  search.click();
+			 
+
+	}
+
+}

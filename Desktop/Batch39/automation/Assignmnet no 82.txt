@@ -1,0 +1,30 @@
+//Assignmnet no 82="Launch google.com Click on Gmail link using LinkText locator"
+
+package seleniump;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class googlelunch {
+
+	public static void main(String[] args) throws InterruptedException {
+
+   ChromeDriver driver=new ChromeDriver();
+   driver.get("https://www.google.com/");
+   driver.manage().window().maximize();
+
+	  driver.findElement(By.linkText("Gmail")).click();
+	 // driver.close();
+	   
+
+
+
+   
+   
+   //driver.close();
+
+	}
+
+}

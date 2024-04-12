@@ -1,0 +1,23 @@
+//assignmnet no 87;Launch facebook.com > Enter username > enter password > 
+//click on login button using relative xpath with attribute name and attribute value.
+package seleniump;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class facebooksel {
+
+	public static void main(String[] args) {
+
+		
+	ChromeDriver driver=new ChromeDriver();
+	driver.get("https://www.facebook.com/");
+	driver.manage().window().maximize();
+	driver.findElement(By.id("email")).sendKeys("testghface@gmail.com");
+	driver.findElement(By.id("pass")).sendKeys("ghy6889");
+	driver.findElement(By.xpath("//button[@value='1']")).click();
+	
+
+	}
+
+}

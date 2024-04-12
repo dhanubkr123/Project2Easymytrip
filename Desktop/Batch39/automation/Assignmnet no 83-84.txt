@@ -1,0 +1,25 @@
+//assigment no 83-84--"Launch amazon India
+//Click on Mobiles link using LinkText locator"
+//Customer Services link using partialLinkText locator
+
+package seleniump;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class amezonmobile {
+
+	public static void main(String[] args) {
+		ChromeDriver driver = new ChromeDriver();
+		driver.get(
+				"https://www.amazon.in/?&tag=googhydrabk1-21&ref=pd_sl_3lda0bxyzj_e&adgrpid=155259813513&hvpone=&hvptwo=&hvadid=674893540019&hvpos=&hvnetw=g&hvrand=15790621515366601047&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9062207&hvtargid=kwd-365295376496&hydadcr=5620_2359471&gad_source=1");
+
+		driver.manage().window().maximize();
+	driver.findElement(By.linkText("Mobiles")).click();
+			driver.findElement(By.partialLinkText("Customer")).click();
+			//driver.close();
+
+
+	}
+
+}

@@ -1,0 +1,28 @@
+//Assignmnet no 85="Launch google.com Type India using relative xpath"
+package launch;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class launchbroswer {
+	
+	public static void main(String[] args) {
+		
+	
+   ChromeDriver driver=new ChromeDriver();
+   driver.manage().window().maximize();
+  // driver.manage().window().minimize();
+   driver.get("https://www.google.co.in");
+   driver.getTitle();
+  // driver.findElement(By.xpath("(//textarea)[1]")).sendKeys("india");  //locator xpath
+   WebElement search=driver.findElement(By.xpath("(//textarea)[1]"));
+   search.sendKeys("india");
+   
+ //  driver.findElement(By.name("q")).sendKeys("India");  //locator name
+ //  driver.findElement(By.name("btnK")).click();
+	/*
+	 * driver.close(); driver.quit();
+	 */
+	}
+}

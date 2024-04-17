@@ -1,0 +1,40 @@
+//Assignmnet no  117-WAP on Parent and child pop-ups a)getWindowHandle   Link-> https://www.google.com   b)getWindowHandles Link->
+//https://www.naukri.com/registration/createAccount?othersrcp=22636
+
+package launch;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class getwindowhandle {
+
+	public static void main(String[] args) throws InterruptedException {
+
+      ChromeDriver driver=new ChromeDriver();
+      driver.get("https://www.naukri.com/registration/createAccount?othersrcp=22636");
+      WebElement k=driver.findElement(By.xpath("//span[.='Google']"));
+      k.click();
+      String s1=driver.getWindowHandle();
+      System.out.println(s1);
+      Set <String> s2=driver.getWindowHandles();
+      System.out.println(s2);
+      Thread.sleep(2000);
+    //  driver.close();
+    //  driver.quite();
+     Iterator <String>g2=s2.iterator();
+  String k2=   g2.next();  //parent id
+  String k3=   g2.next();  // child id
+  driver.switchTo().window(k3);
+
+  System.out.println(k2);
+  System.out.println(k3);
+  //driver.close();
+  driver.quit();
+  
+	}
+
+}

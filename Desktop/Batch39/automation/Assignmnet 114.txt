@@ -1,0 +1,28 @@
+//Assignmnet 114--How to automate the applicaion where the rightclick is prohibited? Link -> 
+
+package seleniump;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class sbibanking {
+	public static void main(String[] args) {
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://retail.onlinesbi.sbi/retail/login.htm#");
+		driver.getTitle();
+		driver.manage().window().maximize();
+		WebElement y = driver.findElement(By.linkText("CONTINUE TO LOGIN"));
+		y.click();
+		WebElement sbi = driver.findElement(By.xpath("//input[@name='userName']"));
+		sbi.sendKeys("SBitest");
+		WebElement sbipsw = driver.findElement(By.id("label2"));
+		sbipsw.sendKeys("tes@123");
+		WebElement captcha = driver.findElement(By.cssSelector("#loginCaptchaValue"));
+		captcha.sendKeys("56tDER");
+		WebElement submit = driver.findElement(By.cssSelector("[type='submit']"));
+		submit.click();
+		
+	}
+
+}

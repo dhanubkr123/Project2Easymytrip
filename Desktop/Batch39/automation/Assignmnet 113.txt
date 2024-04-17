@@ -1,0 +1,29 @@
+//assignmnet 113--css with sub string
+
+package seleniump;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class cssselnameandattrubutevalue {
+
+	public static void main(String[] args) {
+
+		ChromeDriver driver=new ChromeDriver();
+		  driver.manage().window().maximize();
+		  driver.navigate().to("https://www.google.com/");
+		  driver.getTitle();
+			
+			
+		
+			 
+			 //CSS with the help of substring
+			 
+			 WebElement subs=driver.findElement(By.cssSelector("[class^='gLFyf']"));
+		  subs.sendKeys("shoes");
+			//  WebElement subs=driver.findElement(By.cssSelector("[class*='gLFyf']"));
+
+	}
+
+}

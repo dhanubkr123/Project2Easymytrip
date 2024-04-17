@@ -1,0 +1,55 @@
+//Assignment no-118-Launch amazon.in  > type shoes in search > select first shoe > 
+//click on add to cart.click on proceed to buy
+
+package launch;
+
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class amezonwithparenchildwindow {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://www.amazon.in/");
+		driver.manage().window().maximize();
+		WebElement ha = driver.findElement(By.cssSelector("#twotabsearchtextbox"));
+
+		ha.sendKeys("shoes");
+		ha.sendKeys(Keys.ENTER);
+		WebElement child = driver.findElement(By.xpath("//div[@class='a-section aok-relative s-image-tall-aspect']"));
+		child.click();
+		Set<String> d = driver.getWindowHandles();
+		System.out.println(d);
+		Thread.sleep(2000);
+
+		Iterator<String> k = d.iterator();
+		String t1 = k.next();
+		String u = k.next();// child window
+		driver.switchTo().window(u);
+
+		WebElement cart = driver.findElement(By.cssSelector("#add-to-cart-button"));
+		cart.click();
+		Set<String> q = driver.getWindowHandles();
+		System.out.println(q);
+		Thread.sleep(2000);
+
+		Iterator<String> s = q.iterator();
+
+		String v = s.next();
+		String h = s.next();
+		driver.switchTo().window(h);
+		WebElement paymet = driver.findElement(By.xpath("//input[@name='proceedToRetailCheckout']"));
+		paymet.click();
+
+		// WebElement signin=driver.findElement(null)
+		// driver.close();
+
+	}
+
+}

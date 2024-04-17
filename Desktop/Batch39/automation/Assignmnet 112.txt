@@ -1,0 +1,28 @@
+//assignmnet 112--css with Attribut with attraibut value
+
+package seleniump;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class cssselnameandattrubutevalue {
+
+	public static void main(String[] args) {
+
+		ChromeDriver driver=new ChromeDriver();
+		  driver.manage().window().maximize();
+		  driver.navigate().to("https://www.google.com/");
+		  driver.getTitle();
+			
+	 WebElement search=driver.findElement(By.cssSelector("[name='q']"));  //attribute='av'
+				/*
+				 * WebElement search=driver.findElement(By.cssSelector("textarea.gLFyf[name='q']")); 
+				 * //css with tag name.classname[an=av] 
+				 * search.sendKeys("testing");
+				 */	
+
+
+}
+
+}

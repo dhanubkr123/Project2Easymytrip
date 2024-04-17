@@ -1,0 +1,31 @@
+//Assignmnet no 110=Launch google.com > inspect search by css selector with attribute name and attribute value >
+//search India
+
+package seleniump;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class csslocator {
+
+	public static void main(String[] args) {
+
+ChromeDriver driver=new ChromeDriver();
+driver.get("https://www.google.com/");
+driver.manage().window().maximize();
+
+//110	css selector with attribute name and attribute value >
+ WebElement u=driver.findElement(By.cssSelector("[class='gLFyf']"));
+ u.sendKeys("India");
+ u.sendKeys(Keys.ENTER);
+		 
+		 
+		 
+		 
+		 
+
+	}
+
+}

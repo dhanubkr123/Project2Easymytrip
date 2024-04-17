@@ -1,0 +1,31 @@
+//Assignmnet no 107,108,109---Launch google.com> inspect search 
+//by css selector with class name> search India
+
+package launch;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class googlecsselector {
+
+	public static void main(String[] args) {
+
+		ChromeDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
+		driver.manage().window().maximize();
+		WebElement u = driver.findElement(By.cssSelector("#APjFqb")); // #idvalue
+		u.sendKeys("india");
+		WebElement u1 = driver.findElement(By.cssSelector("textarea#APjFqb")); // tagname#id
+		u1.sendKeys("india");
+
+		WebElement u2 = driver.findElement(By.cssSelector(".gLFyf")); // css selector with class name
+
+		u2.sendKeys("india");
+
+		WebElement u3 = driver.findElement(By.cssSelector(" textarea.gLFyf")); // css selector tage name and class value
+
+		u3.sendKeys("india");
+
+	}
+}

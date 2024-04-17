@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-12T15:27:56 IST" name="loginSuite" finished-at="2024-04-12T15:28:42 IST" duration-ms="45639">
+    <groups>
+    </groups>
+    <test started-at="2024-04-12T15:27:56 IST" name="logintest" finished-at="2024-04-12T15:28:42 IST" duration-ms="45639">
+      <class name="dhanashri.newtest.one">
+        <test-method signature="loginAmezon()[pri:0, instance:dhanashri.newtest.one@2f217633]" started-at="2024-04-12T15:28:08 IST" name="loginAmezon" finished-at="2024-04-12T15:28:30 IST" duration-ms="21237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAmezon -->
+      </class> <!-- dhanashri.newtest.one -->
+      <class name="dhanashri.newtest.two">
+        <test-method signature="loginGrotechmind()[pri:0, instance:dhanashri.newtest.two@bd4dc25]" started-at="2024-04-12T15:27:56 IST" name="loginGrotechmind" finished-at="2024-04-12T15:28:08 IST" duration-ms="12385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginGrotechmind -->
+      </class> <!-- dhanashri.newtest.two -->
+      <class name="dhanashri.newtest.four">
+        <test-method signature="facebook()[pri:0, instance:dhanashri.newtest.four@1a18644]" started-at="2024-04-12T15:28:35 IST" name="facebook" finished-at="2024-04-12T15:28:42 IST" duration-ms="6312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- facebook -->
+      </class> <!-- dhanashri.newtest.four -->
+      <class name="dhanashri.newtest.three">
+        <test-method signature="testregister()[pri:1, instance:dhanashri.newtest.three@a530d0a]" started-at="2024-04-12T15:28:30 IST" name="testregister" finished-at="2024-04-12T15:28:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testregister -->
+        <test-method signature="logingoogle()[pri:2, instance:dhanashri.newtest.three@a530d0a]" started-at="2024-04-12T15:28:30 IST" name="logingoogle" finished-at="2024-04-12T15:28:35 IST" duration-ms="5620" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logingoogle -->
+        <test-method signature="testcase3()[pri:3, instance:dhanashri.newtest.three@a530d0a]" started-at="2024-04-12T15:28:35 IST" name="testcase3" finished-at="2024-04-12T15:28:35 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+      </class> <!-- dhanashri.newtest.three -->
+    </test> <!-- logintest -->
+  </suite> <!-- loginSuite -->
+</testng-results>

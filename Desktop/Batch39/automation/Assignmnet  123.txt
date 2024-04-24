@@ -1,0 +1,33 @@
+//assignmnet 123--Get all the links on web page.
+package seleniumpro;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class getlinktext {
+
+	public static void main(String[] args) {
+
+   ChromeDriver driver=new ChromeDriver();
+   driver.get("https://www.amazon.in/");
+    List<WebElement>listl=driver.findElements(By.tagName("a"));
+    {
+    double link=listl.size();
+    for(int i=0;i<=link;i++)
+    {
+    	WebElement singlelink=listl.get(i);
+    	String ms=singlelink.getText();
+    	System.out.println(ms);
+    }
+
+    }
+
+
+	}
+
+	
+
+}

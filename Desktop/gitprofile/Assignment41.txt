@@ -1,0 +1,31 @@
+Name:Dhanashri chougule
+Assignmnet 41 no://write a program to check whether the given string is palindrome or not 
+
+package stringpratices;
+
+public class panlindrome {
+
+	public static void main(String[] args) {
+		String d="Madam";
+		char t=0;
+		int rev=0;
+		for(int i=d.length()-1;i>=0;i--)
+		{
+			t=d.charAt(i);
+			rev=rev+t;
+		}
+		boolean b=d.equals("Madam");
+		System.out.println(b);
+	
+	if(b==true)
+	{
+		System.out.println("String is palindrome");
+	}
+	else
+	{
+		System.out.println("String is not palindrom");
+
+	}
+		
+}
+}

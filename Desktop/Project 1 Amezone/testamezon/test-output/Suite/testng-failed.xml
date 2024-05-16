@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testchrome(failed)">
+    <parameter name="broswer" value="Chrome"/>
+    <classes>
+      <class name="projectonetest.testcase06_verifywithfilter">
+        <methods>
+          <include name="veriftfilter" invocation-numbers="0"/>
+          <include name="post_condition"/>
+          <include name="precondi"/>
+        </methods>
+      </class> <!-- projectonetest.testcase06_verifywithfilter -->
+      <class name="projectonetest.testcase_08priceandrating">
+        <methods>
+          <include name="priceandrate" invocation-numbers="0"/>
+          <include name="post_condition"/>
+          <include name="precondi"/>
+        </methods>
+      </class> <!-- projectonetest.testcase_08priceandrating -->
+      <class name="projectonetest.testcase_07productdetails">
+        <methods>
+          <include name="productdet" invocation-numbers="0"/>
+          <include name="post_condition"/>
+          <include name="precondi"/>
+        </methods>
+      </class> <!-- projectonetest.testcase_07productdetails -->
+      <class name="projectonetest.testcase14">
+        <methods>
+          <include name="rateandorder" invocation-numbers="0"/>
+          <include name="post_condition"/>
+          <include name="precondi"/>
+        </methods>
+      </class> <!-- projectonetest.testcase14 -->
+      <class name="projectonetest.testcase11payment">
+        <methods>
+          <include name="paymentpage" invocation-numbers="0"/>
+          <include name="post_condition"/>
+          <include name="precondi"/>
+        </methods>
+      </class> <!-- projectonetest.testcase11payment -->
+    </classes>
+  </test> <!-- Testchrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

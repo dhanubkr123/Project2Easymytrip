@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite10">
+  <test thread-count="5" name="Testcase10">
+    <classes>
+      <class name="testngproject.testingproject.testcase1"/>
+ <class name="testngproject.testingproject.testcase2"/>
+ <class name="testngproject.testingproject.testcase3checkbox"/>
+ <class name="testngproject.testingproject.testcase4"/>
+ <class name="testngproject.testingproject.testcase5hoveover"/>
+ <class name="testngproject.testingproject.testcase6"/>
+ <class name="testngproject.testingproject.testcase7"/>
+ <class name="testngproject.testingproject.testcase8"/>
+      <class name="testngproject.testingproject.testcase9"/>
+   <class name="testngproject.testingproject.testcase_10"/>
+    </classes>
+  </test> <!-- Testcase10 -->
+</suite> <!-- Suite10 -->

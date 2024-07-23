@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Testchorme(failed)">
+    <parameter name="broswer" value="Chrome"/>
+    <classes>
+      <class name="redbus.redbus.testcase11_otherdetails">
+        <methods>
+          <include name="otherdetailspage"/>
+        </methods>
+      </class> <!-- redbus.redbus.testcase11_otherdetails -->
+      <class name="redbus.redbus.Testcaser05_roundtrip">
+        <methods>
+          <include name="roundtrinfunctinality"/>
+        </methods>
+      </class> <!-- redbus.redbus.Testcaser05_roundtrip -->
+      <class name="redbus.redbus.Testcase_15paymentpage">
+        <methods>
+          <include name="paymentfunctinality"/>
+        </methods>
+      </class> <!-- redbus.redbus.Testcase_15paymentpage -->
+      <class name="redbus.redbus.Testcase14_roundtrip">
+        <methods>
+          <include name="roundtripfunctinality"/>
+        </methods>
+      </class> <!-- redbus.redbus.Testcase14_roundtrip -->
+      <class name="redbus.redbus.Testredbus">
+        <methods>
+          <include name="signandlogin"/>
+        </methods>
+      </class> <!-- redbus.redbus.Testredbus -->
+      <class name="redbus.redbus.classesTestCase_6">
+        <methods>
+          <include name="classes"/>
+        </methods>
+      </class> <!-- redbus.redbus.classesTestCase_6 -->
+    </classes>
+  </test> <!-- Testchorme(failed) -->
+</suite> <!-- Failed suite [Suite] -->

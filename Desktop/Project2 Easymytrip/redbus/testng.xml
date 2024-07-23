@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="2" name="Testchorme">
+		<parameter name="broswer" value="Chrome"></parameter>
+		<classes>
+			<class name="redbus.redbus.Testredbus" />
+			<class name="redbus.redbus.TestCase03_invaliduser" />
+			<class name="redbus.redbus.onewaytestcase" />
+			<class name="redbus.redbus.Testcaser05_roundtrip" />
+			<class name="redbus.redbus.classesTestCase_6" />
+			<class name="redbus.redbus.multicity_testcase" />
+			<class name="redbus.redbus.Flight_info_testcas10" />
+		    <class name="redbus.redbus.testcase11_otherdetails" />
+			<class name="redbus.redbus.Testcase14_roundtrip"/>
+			<class name="redbus.redbus.Testcase_15paymentpage"/>
+			<class name="redbus.redbus.coupentestcase"></class>
+			
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
+
